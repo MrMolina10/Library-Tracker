@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: cover;
+    background-position: center;
+}
+
+#landing__page{
+    min-height: 100vh;
+}
+a{
+    text-align: center;
+}
+.menu-bar{
+    text-align: center;
+    background: rgb(0, 100, 0);
+}
+.manu-bar, ul{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+.menu-bar ul li{
+    width: 130px;
+    margin: 15px;
+    padding: 10px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+    
+.active, .menu-bar ul li:hover{
+    background: purple;
+    border-radius: 3px;
+}
+
+.menu-bar .fas{
+    margin-right: 5px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+.container{
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 70%;
+  }
+
+  .btn__layout{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn{
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+  }
