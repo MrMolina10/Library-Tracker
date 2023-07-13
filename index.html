@@ -8,30 +8,38 @@
     <title>Library Tracker</title>
 </head>
 <body>
-    <section id="landing__page">
-        <div class="menu-bar">
-            <ul>
-                <li class="active"><a href="#"><i class="fas fa-book-reader"></i>Now Reading</a></li>
-                <li class=><a href="#"><i class="fas fa-book"></i>Up Next</a></li>
-                <li class=><a href="#"><i class="fas fa-sort"></i>Sort By</a>
-                    <div class="sub-menu-1">
-                        <ul>
-                            <li class=><a href="#">Title</a></li>
-                            <li class=><a href="#">Author</a></li>
-                            <li class=><a href="#">Category</a></li>
-                            <li class=><a href="#">Rating</a></li>
-                        </ul>
-                    </div>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Now Reading</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Up Next</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Library</a>
                 </li>
             </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <div class="search__section">
+            <input class="input__bar" placeholder="Find Book..." type="text">
+            <button class="btn">Search</button>
         </div>
-        <div class="container">
-            <input type="text" placeholder="🔍 Find Book..">
+        <div class="show__more">
+            <button id="showAll" class="library__btn">Show Library</button>
         </div>
-        <div class="btn__layout">
-            <button class="btn">Load More</button>
-        </div>
-    </section>
+        <section id="book__section">
+            
+        </section>
+    
     <script src="style.js"></script>
 </body>
 </html>

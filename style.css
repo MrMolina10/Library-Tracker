@@ -3,113 +3,157 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     background-size: cover;
     background-position: center;
+    background-color: #262626;
 }
 
-#landing__page{
-    min-height: 100vh;
-}
-a{
-    text-align: center;
-}
-.menu-bar{
-    text-align: center;
-    background: rgb(0, 100, 0);
-}
-.manu-bar, ul{
-    display: inline-flex;
+li{
     list-style: none;
-    color: black;
 }
-.menu-bar ul li{
-    width: 130px;
-    margin: 15px;
-    padding: 10px;
-}
-.menu-bar ul li a{
+
+a{
     text-decoration: none;
-    color: black;
-}
-    
-.active, .menu-bar ul li:hover{
-    background: purple;
-    border-radius: 3px;
+    color: white;
 }
 
-.menu-bar .fas{
-    margin-right: 5px;
+header{
+    background-color: #262626;
 }
 
-.sub-menu-1{
-    display: none;
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
 }
 
-.menu-bar ul li:hover .sub-menu-1{
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-item{
+    margin: 16px 0;
+}
+
+.nav-menu.active{
+    left: 0;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color: dodgerblue;
+}
+
+
+
+.hamburger{
     display: block;
+    cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg)
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.search__section{
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__bar{
+    font-size: 19px;
+    width: 400px;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+}
+
+.btn{
+    font-size: 20px;
     position: absolute;
-    background: rgb(0, 100, 0);
-    margin-top: 15px;
-    margin-left: -15px;
+    right: 30%;
+    border-radius: 50px;
+    padding: 1rem 1rem;
 }
 
-.menu-bar ul li:hover .sub-menu-1 ul{
-    display: block;
-    margin: 10px;
+.show__more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
 }
 
-.menu-bar ul li:hover .sub-menu-1 ul li{
-    width: 150px;
-    padding: 10px;
-    border-bottom: 1px dotted #fff;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
+.library__btn{
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 5px;
 }
 
-.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
-    border-bottom: none;
+#book__section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 .container{
-    height: 70vh;
-    margin: 0 auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 20px;
 }
 
-input[type=text] {
-    width: 200px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    transition: width 0.4s ease-in-out;
-  }
-  
-  input[type=text]:focus {
-    width: 70%;
-  }
+.book-title{
+    margin-bottom: 10px;
+    color: white;
+}
 
-  .btn__layout{
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.book-img{
+    width: 300px;
+    height: 400px;
+}
 
-  .btn{
-    padding: 10px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: white;
-  }
+.book-quote{
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+}
