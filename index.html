@@ -30,9 +30,12 @@
         </nav>
     </header>
         <div class="search__section">
-            <input class="input__bar" placeholder="Find Book..." type="text">
-            <button class="btn">Search</button>
+        <div class="btn__section">
+            <input id="inputBtn" class="input__bar" placeholder="Find Book..." type="text">
+            <button id='bookOutput' onclick="getBook()" class="btn">Search</button>
         </div>
+        </div>
+        <div id="output" class="output__section"></div>
         <div class="show__more">
             <button id="showAll" class="library__btn">Show Library</button>
         </div>
