@@ -269,5 +269,12 @@ header{
         max-width: 600px;
         grid-template-columns: repeat(2, 1fr);
     }
-    
+    .container{
+        margin: 5px;
+        padding: 5px;
+    }
+    .book-img{
+        width: 250px;
+    }
+
 }
